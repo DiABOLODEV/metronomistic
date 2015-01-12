@@ -1,5 +1,6 @@
 package com.istic.metronome.controller;
 
+import com.istic.metronome.command.Command;
 import com.istic.metronome.engine.Engine;
 import com.istic.metronome.ihm.IHM;
 import com.istic.metronome.ihm.IHM.LED_ID;

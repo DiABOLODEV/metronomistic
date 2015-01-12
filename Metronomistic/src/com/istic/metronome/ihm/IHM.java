@@ -12,16 +12,16 @@ public interface IHM {
 	public enum LED_ID {LED_1, LED_2}
 	/**
 	 * Allume la LED dont l'identifiant est passe en parametre
-	 * @param _numLED
+	 * @param numLED
 	 * 		Identifiant de la LED (de type LED_ID)
 	 */
-	public void allumerLED(LED_ID _numLED);
+	public void allumerLED(LED_ID numLED);
 	/**
 	 * eteint la LED dont l'identifiant est passe en parametre
-	 * @param _numLED
+	 * @param numLED
 	 * 		Identifiant de la LED (de type LED_ID)
 	 */
-	public void eteindreLED(LED_ID _numLED);
+	public void eteindreLED(LED_ID numLED);
 	/**
 	 * Methode appelee a  chaque marquage du tempo pour emettre un son
 	 */
@@ -69,11 +69,11 @@ public interface IHM {
 	public void setEmetteurSonore(EmetteurSonore emetteur);
 	/**
 	 * Affecte une LED avec l'identifiant correspondant (au nombre de deux, definit par l'enumeration LED_ID)
-	 * @param _id
+	 * @param id
 	 * 		Identifiant de la LED (de type LED_ID)
-	 * @param _led
+	 * @param led
 	 * 		Reference vers l'objet LED
 	 */
-	public void setLED(LED_ID _id, LED led);
+	public void setLED(LED_ID id, LED led);
 }
 
