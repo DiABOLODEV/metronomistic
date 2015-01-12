@@ -6,6 +6,11 @@ import com.istic.metronome.command.Command;
  * Definit les interactions possibles avec un objet de type IHM
  */
 public interface IHM {
+	
+	/**
+	 * Initialise l'IHM
+	 */
+	public void init();
 	/**
 	 * Identifiants des LED utilisees par l'IHM, au nombre de deux.
 	 */
@@ -74,6 +79,8 @@ public interface IHM {
 	 * @param led
 	 * 		Reference vers l'objet LED
 	 */
+	public void setMolette(Molette molette);
+
 	public void setLED(LED_ID id, LED led);
 }
 
