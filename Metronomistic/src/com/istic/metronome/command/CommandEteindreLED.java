@@ -3,25 +3,24 @@ package com.istic.metronome.command;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-import com.istic.metronome.ihm.IHM;
+import com.istic.metronome.component.Materiel;
+
 
 
 /**
  * Éteint une LED
  */
 public class CommandEteindreLED implements Command, ActionListener {
-	
-	private IHM ihm;
-	private IHM.LED_ID numLED;
-	
-	public CommandEteindreLED(IHM _ihm, IHM.LED_ID _numLED) {
-		this.ihm = _ihm;
-		this.numLED = _numLED;
+	private int numLED;
+
+	public CommandEteindreLED(int numLED) {
+		this.numLED = numLED;
 	}
+
 
 	@Override
 	public void execute() {
-		this.ihm.eteindreLED(this.numLED);
+		Materiel.getAfficheur().eteindreLED(this.numLED);
 	}
 
 	@Override

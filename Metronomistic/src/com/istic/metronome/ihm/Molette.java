@@ -21,5 +21,7 @@ public interface Molette {
 	 * @return La position de la molette
 	 */
 	public int position();
+
+	public void lireEtat();
 }
 
