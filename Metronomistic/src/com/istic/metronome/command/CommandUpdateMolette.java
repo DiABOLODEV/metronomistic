@@ -1,11 +1,9 @@
 package com.istic.metronome.command;
 
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-
-
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
+
+import com.istic.metronome.controller.Controller;
 
 /**
  * Changement de position de la molette du tempo
@@ -16,7 +14,7 @@ public class CommandUpdateMolette implements Command, ChangeListener {
 
 	/**
 	 * Constructeur prenant en paramètre une référence vers le controlleur
-	 * @param _ctl
+	 * @param ctl
 	 * 		Référence vers un objet de type IController
 	 */
 	public CommandUpdateMolette(Controller ctl) {

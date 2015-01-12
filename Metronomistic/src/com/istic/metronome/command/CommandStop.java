@@ -2,6 +2,8 @@ package com.istic.metronome.command;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+
+import com.istic.metronome.controller.Controller;
 /**
  * Arrête le métronome
  */
